@@ -12,7 +12,6 @@ exports.min = function min(array) {
   }
   return result;
 }  
-
 exports.max = function max(array) {
   let result = 0;
 
@@ -27,18 +26,16 @@ exports.max = function max(array) {
   }
   return result;
 }
-
 exports.avg = function avg(array) {
-  let result = 0;
+  let res = 0;
   let sum = 0;
 
   if(!array || !array.length) {
-    return result;
+    return res;
   } else {
     array.forEach(element => {
-      result +=element;
+      res +=element;
     });
   }
-
-  return result / array.length;
+  return res / array.length;
 }
